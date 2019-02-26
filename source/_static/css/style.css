@@ -2638,6 +2638,10 @@ div.highlight pre {
         margin-bottom: 0;
       }
 
+      #main-content{
+        padding-left: 1.5em;
+      }
+
       #page .jumbo-bar {
         height: auto;
       }
