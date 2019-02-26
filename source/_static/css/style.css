@@ -33,7 +33,7 @@ img {
 
 table {
   border: 1px solid #00a9e5;
-  margin: 5px auto;
+  margin: 0.5em auto;
 }
 
 th, td {
@@ -1969,7 +1969,7 @@ blockquote {
 }
 
 .admonition {
-  margin-bottom: 1.5em;
+  margin: 0.5em 0 1.5em 0;
   overflow: auto;
 }
 
