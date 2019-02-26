@@ -142,8 +142,8 @@ a.btn-wazuh:active {
 }
 
 .header .main-head{
-  padding-top: 4em;
-  padding-bottom: 5em;
+  padding-top: 1.75em;
+  padding-bottom: 2em;
 }
 
 .header .menuweb-bar{
@@ -192,7 +192,7 @@ a.btn-wazuh:active {
 }
 
 .menu-sub .submenu a.nav-link {
-  padding: 5px 7px;
+  padding: 5px 10px;
   color: #333;
 }
 
@@ -207,8 +207,8 @@ a.btn-wazuh:active {
 .main-head .header-title{
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 2.5em;
-  margin: 1em 0;
+  font-size: 2.2em;
+  margin: 0.6em 0;
   text-align: center;
   line-height: 1.2;
   display: inline-block;
@@ -217,14 +217,14 @@ a.btn-wazuh:active {
 
 .main-head p{
   color: #fff;
-  font-size: 1.4em;
+  font-size: 1.2em;
   text-align: center;
   max-width: 70%;
   margin: 0 auto 2em auto;
 }
 
 .header a.btn-wazuh{
-  font-size: 1.5rem !important;
+  font-size: 1.2rem !important;
 }
 
 .header > .container{
@@ -310,6 +310,7 @@ header .social-bar .menu-item a {
 
 .index .menu-sub {
   background: #00a9e5;
+  border-bottom: 1px solid #00a9e5;
 }
 
 .menu-sub {
@@ -439,27 +440,24 @@ footer a:focus .fa {
   width: 12px;
 }
 
-li.toctree-l1 {
-  font-size: 1.05em;
+li.toctree-l1, li.toctree-l1 > a {
+  font-size: 0.95em;
 }
 
-li.toctree-l2,
-li.toctree-l3,
-li.toctree-l4 {
-  font-size: calc(100% - 2px);
-}
-
-li.toctree-l1 > a,
 li.toctree-l2 > a,
 li.toctree-l3 > a,
 li.toctree-l4 > a {
-  font-size: 1em;
+  font-size: 0.85em;
   position: relative;
 }
 
 .globaltoc li.toctree-l1 > a {
   display: block;
   padding: 0.5em 2.2em 0.5em 1.2rem;
+}
+
+.globaltoc a:hover {
+  color: #0094d0;
 }
 
 li.toctree-l2 > a {
@@ -510,6 +508,16 @@ ul li.toctree-l1 a.current.reference.internal:after {
 
 .globaltoc li.toctree-l2 a {
   border-left: 1px solid #00a9e5;;
+}
+
+.globaltoc li.toctree-l2 > a{
+  margin-left: 1em;
+}
+.globaltoc li.toctree-l3 > a{
+  margin-left: 2em;
+}
+.globaltoc li.toctree-l4 > a{
+  margin-left: 3em;
 }
 
 .globaltoc li.toctree-l1.current > a,
@@ -1542,11 +1550,11 @@ ul {
   font-weight: 400;
 }
 
-.central-page-area,
+/*.central-page-area,
 table,
 a[data-lightbox] img {
   margin-bottom: 2em;
-}
+}*/
 
 .central-page-area p strong,
 .central-page-area ul strong,
@@ -1951,11 +1959,14 @@ label {
 }
 
 blockquote {
-  background-color: rgba(0, 169, 229, .12);
-  border-left: 5px solid #00a9e5;
+  background-color: #fff;
   margin-bottom: 1.5em;
   overflow: auto;
-  border-right: 15px solid #e0f5fc;
+  padding-left: 1em;
+}
+
+.nav-prevnext{
+  padding: 1em 0;
 }
 
 .admonition {
@@ -2012,6 +2023,10 @@ a:hover,
 a:active {
   color: #0094ce;
   text-decoration: none;
+}
+
+.menuweb-bar a:hover, #menu-header-social-bar a:hover{
+  color: rgba(255,255,255,.75);
 }
 
 nav a,
@@ -2326,9 +2341,10 @@ ul#breadcrumbs {
   padding-top: 1em;
 }
 
-ul#breadcrumbs .fa-caret-right {
-  color: #ffb600;
-  padding: 0 4px;
+ul#breadcrumbs .fa-angle-right {
+  color: #0094ce;
+  padding: 0 7px 0 4px;
+  font-size: 1.2em;
 }
 
 ul#breadcrumbs li,
@@ -2415,7 +2431,7 @@ div.highlight pre {
   }
 
   .stickynote p {
-    font-size: 0.8rem;
+    font-size: .95rem;
   }
 
   .button-area-flex {
@@ -2575,6 +2591,29 @@ div.highlight pre {
         color: #00a9e5;
       }
 
+      .menu-sub .submenu #menu-submenu{
+        height: 100%;
+      }
+
+      .menu-sub .submenu #menu-submenu > li.nav-item{
+        height: 100%;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        -ms-align-items: center;
+        align-items: center;
+        border-bottom: 3px solid rgba(255,255,255,0);
+      }
+
+      .menu-sub .submenu #menu-submenu > li:hover{
+        border-bottom: 3px solid rgba(0, 169, 229, 1);
+      }
+
+      .index .menu-sub .submenu #menu-submenu > li:hover{
+        background: #0094d0;
+        border-bottom: 3px solid rgba(255,255,255,1);
+      }
+
       nav.collapse.navbar-collapse.navbar-main-collapse {
         position: static;
       }
@@ -2681,8 +2720,8 @@ div.highlight pre {
       }
 
       #main-footer {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 2em;
+        padding-bottom: 4em;
       }
 
       .footer-title {
@@ -2983,7 +3022,7 @@ div.highlight pre {
       }
 
       .button-area-flex {
-        max-width: 500px;
+        max-width: 420px;
         margin: 0 auto;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -3293,6 +3332,9 @@ div.highlight pre {
 
       nav.full-toctree-nav {
         min-height: 100vh;
+        padding-left: 0;
+        padding-right: 0;
+        background: #ebebeb;
       }
 
       nav.full-toctree-nav.reached-top {
@@ -3304,7 +3346,7 @@ div.highlight pre {
 				position: sticky;
 				top: 50px;
 				overflow: auto;
-				max-height: calc(100vh - 55px);
+				max-height: 100vh;
       }
 
       #globaltoc {
