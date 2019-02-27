@@ -3350,6 +3350,7 @@ div.highlight pre {
 				top: 50px;
 				overflow: auto;
 				max-height: 100vh;
+        height: 100%;
       }
 
       #globaltoc {
