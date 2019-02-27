@@ -33,8 +33,7 @@ img {
 
 table {
   border: 1px solid #00a9e5;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0.7em auto;
 }
 
 th, td {
