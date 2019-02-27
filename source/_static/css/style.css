@@ -58,6 +58,7 @@ th {
 
 #main-content {
 	background-color: #ffffff;
+  padding-left: 30px;
 }
 
 .social-bar,
@@ -947,6 +948,11 @@ footer .contact-info .fa-paper-plane-o {
   font-size: 0.87rem;
 }
 
+.full-toctree-nav{
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .footer-column ul,
 .full-toctree-nav ul {
   padding: 0;
@@ -957,6 +963,7 @@ footer .contact-info .fa-paper-plane-o {
 
 .globaltoc > ul {
 	bottom: 0;
+  height: 100%;
 }
 
 .widget_text .textwidget {
@@ -1351,12 +1358,6 @@ ul {
   color: #333333;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-}
-
-.central-page-area,
-table,
-a[data-lightbox] img {
-  margin-bottom: 2em;
 }
 
 .central-page-area p strong,
@@ -3063,7 +3064,7 @@ div.highlight pre {
       }
 
       nav.full-toctree-nav {
-        background-color: #fff;
+        background-color: #EBEBEB;
 				min-height: 100vh;
       }
 
@@ -3076,7 +3077,8 @@ div.highlight pre {
 				position: sticky;
 				top: 50px;
 				overflow: auto;
-				max-height: calc(100vh - 55px);
+				max-height: 100vh;
+        height: 100%;
       }
 
       #globaltoc {
